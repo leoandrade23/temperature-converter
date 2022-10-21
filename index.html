@@ -14,9 +14,9 @@
       </div>
       <div class="inputs">
         <span>Temperatura em ºF: </span
-        ><input type="number" id="fahrenheit" placeholder="Fahrenheit" />
+        ><input type="text" id="fahrenheit" placeholder="Fahrenheit" />
         <span>Temperatura em ºC: </span
-        ><input type="number" id="celsius" placeholder="Celsius" />
+        ><input type="text" id="celsius" placeholder="Celsius" />
       </div>
       <div class="result">
         <h2></h2>
@@ -28,5 +28,14 @@
     </div>
     <footer>&copy; Copyright - Leonardo Andrade</footer>
     <script src="assets/script/script.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+      IMask(document.getElementById("fahrenheit"), {
+        mask: "00.0",
+      });
+      IMask(document.getElementById("celsius"), {
+        mask: "00.0",
+      });
+    </script>
   </body>
 </html>

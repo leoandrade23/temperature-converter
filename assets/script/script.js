@@ -22,8 +22,8 @@ const convert = () => {
     qS(".result h2").textContent = `${c} ºC é igual a ${f.toFixed(1)} ºF`;
     qS(".result").style.display = "flex";
   }
-  grauC.value = "";
-  grauF.value = "";
+  grauC.value = null;
+  grauF.value = null;
 };
 
 const reset = () => {
